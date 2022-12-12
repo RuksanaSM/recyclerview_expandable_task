@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/outerline"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+<ImageView
+    android:id="@+id/placeimage"
+    android:layout_width="70dp"
+    android:layout_height="80dp"
+    android:layout_margin="8dp"
+    android:src="@mipmap/ic_launcher_round"
+    android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/recyclertextplace1"
+                android:layout_width="210dp"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="Tourist place"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/downarrowid"
+                android:layout_width="64dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/expandid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+             android:layout_margin="10dp"
+                android:id="@+id/callid"
+                android:src="@drawable/ic_baseline_call_24"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:scaleX="2"
+                android:layout_margin="10dp"
+            android:id="@+id/mapid"
+                android:src="@drawable/ic_baseline_fmd_good_24"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:id="@+id/webid"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_baseline_open_in_browser_24"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+</LinearLayout>
